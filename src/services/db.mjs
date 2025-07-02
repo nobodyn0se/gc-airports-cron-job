@@ -10,6 +10,9 @@ const getPool = () => {
         // Create a new pool instance using the connection string
         pool = new Pool({
             connectionString: process.env.DB_URL,
+            ssl: {
+                rejectUnauthorized: false,
+            },
             max: 1, // Maximum number of clients in the pool
             idleTimeoutMillis: 120000,
         });

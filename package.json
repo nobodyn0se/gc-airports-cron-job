@@ -1,8 +1,9 @@
 {
   "name": "gc-airports-cron-job",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cron job to fetch airports on a weekly basis and update Postgres DB after processing the data",
   "main": "src/job.mjs",
+  "packageManager": "pnpm@10.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --trace-warnings src/job.mjs",
