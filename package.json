@@ -1,0 +1,24 @@
+{
+  "name": "gc-airports-cron-job",
+  "version": "1.0.0",
+  "description": "Cron job to fetch airports on a weekly basis and update Postgres DB after processing the data",
+  "main": "src/job.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --trace-warnings src/job.mjs",
+    "start": "node src/job.mjs"
+  },
+  "keywords": [],
+  "author": "Nobody Nose",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "csv-parser": "^3.2.0",
+    "pg": "^8.16.3",
+    "stream": "^0.0.3",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "dotenv": "^17.0.1"
+  }
+}
