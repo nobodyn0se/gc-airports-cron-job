@@ -1,4 +1,4 @@
-import logger from '../middleware/logger.mjs';
+import logger from '../middleware/logger.js';
 
 const processAirportData = (csvData) => {
     const processedData = [];

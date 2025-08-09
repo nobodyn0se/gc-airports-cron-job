@@ -1,6 +1,6 @@
 import { Readable } from 'stream';
 import csv from 'csv-parser';
-import logger from '../middleware/logger.mjs';
+import logger from '../middleware/logger.js';
 
 const parseCsvData = async (csvData) => {
     const results = [];

@@ -1,7 +1,7 @@
 import * as pg from 'pg';
 const { Pool } = pg;
-import queries from '../queries/airports-queries.mjs';
-import logger from "../middleware/logger.mjs";
+import queries from '../queries/airports-queries.js';
+import logger from "../middleware/logger.js";
 
 let pool;
 

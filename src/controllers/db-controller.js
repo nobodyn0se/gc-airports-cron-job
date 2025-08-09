@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-import logger from "../middleware/logger.mjs";
-import {parseCsvData} from "../util/parse-csv-data.mjs";
-import {processAirportData} from "../util/process-airport-data.mjs";
-import tx from "../services/tx.mjs";
-import {batchUpsertAirports} from "../services/db.mjs";
+import logger from "../middleware/logger.js";
+import {parseCsvData} from "../util/parse-csv-data.js";
+import {processAirportData} from "../util/process-airport-data.js";
+import tx from "../services/tx.js";
+import {batchUpsertAirports} from "../services/db.js";
 
 const fetchAndUpdateAirports = async () => {
     let csvData;

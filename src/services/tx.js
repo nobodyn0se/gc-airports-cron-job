@@ -1,5 +1,5 @@
-import logger from '../middleware/logger.mjs';
-import { getPool } from './db.mjs';
+import logger from '../middleware/logger.js';
+import { getPool } from './db.js';
 
 const startTx = async () => {
     const pool = getPool();
